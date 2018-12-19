@@ -1,0 +1,7 @@
+body{font-family: "Pathway Gothic One"; }
+.table-mission{width: 1220px; font-family: "Pathway Gothic One"; font-size: 20px; border-collapse: collapse; margin-bottom: 100px; }
+.table-mission td, .table-mission th{border: 3px solid #79b8d1; padding: 8px; }
+.table-mission th{color: #ff7777; background-color: #aef4a4; }
+.search-form{float: left; font-size: 25px; margin-bottom: 30px; margin-top: -10px; }
+.search-form input[type=text]{width: 300px; height: 25px; }
+.search-form input[type=submit]{width: 100px; height: 30px; border: none; background-color: crimson; color: aquamarine; font-family: "Pathway Gothic One"; font-size: 18px; }

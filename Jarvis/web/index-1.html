@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>J.A.R.V.I.S</title>
+<link rel="icon" type="image/png"  href="WEB-IMG/A_icon.png">
+<link rel="stylesheet" type="text/css" href="index.css">
+<script src="index.js"></script>
+</head>
+
+<body>
+
+<!--Sub Content-->
+<div class="overlay-login-content" id="login-content">
+	<a href="javascript:void(0)" class="closebtn-R" onclick="closeOverlayLogin()">&times;</a>
+	<form action="" method="POST" id="login">
+		<div class="login-text">USER LOGIN</div>
+		<div class="login-form">
+			<label for="lb-username">Username:</label><br/>
+			<input type="text" name="txtUsername" value="" placeholder="Enter Username..." class="login-content"/><br/>
+			
+			<label for="lb-password">Password:</label><br/>
+			<input type="password" name="txtPassword" value="" placeholder="Enter Password..." class="login-content"/><br/>
+			
+			<input type="submit" name="action" value="Login"/>
+		</div>
+	</form>
+</div>
+
+
+<div class="overlay-sign-up-content" id="overlay-sign-up">
+	<a href="javascript:void(0)" class="closebtn-R" onclick="closeSignUp()">&times;</a>
+	<form action="" method="POST" id="sign-up">
+		<div class="sign-up-text">SIGN UP</div>
+		<div class="sign-up-form">
+			<label for="lb-username">Username:</label><br/>
+			<input type="text" name="txtUsername" value="" placeholder="Username..." class="sign-up-content"/><br/>
+			
+			<label for="lb-firstname">Firstname:</label><br/>
+			<input type="text" name="txtFirstname" value="" placeholder="First Name..." class="sign-up-content"/><br/>
+			
+			<label for="lb-lastname">Lastsname:</label><br/>
+			<input type="text" name="txtLastname" value="" placeholder="Last Name..." class="sign-up-content"/><br/>
+			
+			<label for="lb-password">Password:</label><br/>
+			<input type="password" name="txtPassword" value="" placeholder="Password..." class="sign-up-content"/><br/>
+			
+			<label for="lb-confirm-password">Confirm Password:</label><br/>
+			<input type="password" name="txtConfirm" value="" placeholder="Confirm Your Password..." class="sign-up-content"/><br/>			
+			
+			<label for="lb-email">Email:</label><br/>
+			<input type="text" name="txtEmail" value="" placeholder="Email..." class="sign-up-content"/><br/>
+			
+			<input type="submit" name="action" value="Register" id="button-register"/>
+		</div>
+	</form>
+</div>
+
+<div class="overlay-gallery-content" id="overlay-gallery">
+	<a href="javascript:void(0)" class="closebtn-L" onclick="closeOverlayGallery()">&times;</a>
+</div>
+
+<div class="overlay-mission-content" id="overlay-mission">
+	<a href="javascript:void(0)" class="closebtn-L" onclick="closeOverlayMission()">&times;</a>
+</div>
+
+<div class="overlay-member-content" id="overlay-member">
+	<a href="javascript:void(0)" class="closebtn-L" onclick="closeOverlayMember()">&times;</a>
+</div>
+
+<div class="overlay-about-content" id="overlay-about">
+	<a href="javascript:void(0)" class="closebtn-T" onclick="closeAbout()">&times;</a>
+</div>
+<!--End of sub content -->
+
+<!--Main Content-->
+<div class="header">
+	<div class="header-bar">
+		<div class="jarvis-logo">
+                    <img src="WEB-IMG/Jarvis-logo.png"/>
+		</div>
+		<div class="home">		
+			<a href="">HOME</a>
+		</div>
+		<div class="about">
+			<a onClick="openAbout()">ABOUT</a>
+		</div>
+		<div class="log-in">
+			<a onClick="openOverlayLogin()">LOG IN</a>
+		</div>
+		<div class="sign-up">
+			<a onClick="openSignUp()">SIGN UP</a>
+		</div>
+	</div>
+</div>
+
+<div class="body-content">
+    <img src="WEB-IMG/background.jpg" id="background-img">
+	
+	<div class="body-content-left">
+		<div class="social-bar">
+			<div class="social-content">
+				<div class="social-facebook">
+					<a href="https://www.facebook.com/avengers/"><img src="WEB-IMG/Facebook.png" id="facebook"/></a>
+				</div>
+				<div class="social-instagram">
+					<a href="https://www.instagram.com/avengers/"><img src="WEB-IMG/Instagram.png" id="instagram"/></a>
+				</div>
+				<div class="social-twitter">
+					<a href="https://twitter.com/Avengers"><img src="WEB-IMG/Twitter.png" id="twitter"/></a>
+				</div>
+			</div>
+		</div>
+		<div class="menu-bar">			
+			<div class="gallery">
+				<span onClick="openOverlayGallery()">
+					GALLERY
+				</span>
+			</div>
+			<div class="mission">
+				<span onClick="openOverlayMission()">
+					MISSION!!!
+				</span>
+			</div>
+			<div class="member">
+				<span onClick="openOverlayMember()">
+					OUR MEMBER
+				</span>
+			</div>
+		</div>
+	</div>
+	
+	<div class="body-content-right">
+		<div class="body-right-content-top">
+			<img src="WEB-IMG/Avengers-Logo.png" id="avenger-img">
+		</div>
+		<div class="body-right-content-bottom">
+			<div class="login-box">				
+				<a onClick="openSignUp()" id="login-link">
+					<img src="WEB-IMG/Sign up-logo.png" id="login-img">
+				</a>
+			</div>			
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+	This This website is created by ThanhTD. For more information please <a href="https://www.facebook.com/TZB291297" id="myProfile">click here.</a>
+</div>
+</body>
+</html>
