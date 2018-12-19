@@ -1,0 +1,17 @@
+body{width: 1220px; border: 1px solid black; margin: 0px ; height: 100%; font-family: "Pathway Gothic One"; box-sizing: border-box; }
+.profile-detail-container{width: 90%; height: 600px; border-right: 2px solid #74dbef; box-sizing: border-box; margin-left: 50px; margin-top: -15px; position: absolute; }
+.profile-image img{width: 300px; height: 430px; border: 2px solid #20366b; float: left; margin-left: 70px; position: absolute; margin-top: 10px;}
+.profile-detail{width: 500px; height: 100%; box-sizing: border-box; float: left; box-sizing: border-box; font-size: 30px; color: #aa530e; position: absolute; margin-left: 450px; }
+.profile-detail input[name=txtUsername]{width: 300px; height: 25px; margin-bottom: 10px; font-size: 15px; margin-left: 40px; }
+.profile-detail input[name=txtPassword]{width: 300px; height: 25px; margin-bottom: 10px; font-size: 15px; margin-left: 40px; margin-right: 150px; }
+.profile-detail input[name=txtFirstname]{width: 400px; height: 25px; margin-bottom: 10px; font-size: 15px; margin-left: 40px; }
+.profile-detail input[name=txtLastname]{width: 400px; height: 25px; margin-bottom: 10px; font-size: 15px; margin-left: 40px; }
+.profile-detail input[name=txtEmail]{width: 400px; height: 25px; margin-bottom: 10px; font-size: 15px; margin-left: 40px; }
+.profile-detail input[name=txtRole]{width: 200px; height: 25px; margin-bottom: 10px; font-size: 15px; margin-left: 40px; } 
+.profile-detail input[type=submit]{width: 300px; height: 35px; font-size: 15px; border: 1px solid #097F6C; background-color: #ef3f61; margin-left: 50px; margin-top: 20px; color: #eff0f4; }
+h2{font-size: 40px; margin-left: 10px; color: #4e709d; }
+#img-url{position: absolute; left: 50px; bottom: 110px; width: 350px; height: 25px; border: 1px solid #6c5b7b; }
+#update-profile label.error{color: red; font-style: italic; font-size: 20px; margin-left: 50px; }
+.profile-detail input[type=radio]{margin-left: 70px; margin-right: -60px; } 
+.radioBtn{color: black; font-size: 25px; }
+#update-profile::-webkit-scrollbar {display: none; }
