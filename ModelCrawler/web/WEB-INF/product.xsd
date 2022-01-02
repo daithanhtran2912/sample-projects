@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xsd:schema version="1.0"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified">
+    <xsd:element name="product">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element type="NonNullString" name="productName"/>
+                <xsd:element type="NonNullString" name="productManufacturer"/>
+                <xsd:element type="xsd:string" name="scale"/>
+                <xsd:element type="NonNullString" name="price"/>
+                <xsd:element type="NonNullString" name="productCode"/>
+                <xsd:element type="NonNullString" name="upcCode"/>
+                <xsd:element type="xsd:anyURI" name="productUrl"/>
+                <xsd:element name="idCategory">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element type="CategoryType" name="category"/>
+                        </xsd:sequence>
+                        <xsd:attribute type="xsd:positiveInteger" name="id"/>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:simpleType name="NonNullString">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="1"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="CategoryType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Car"/>
+            <xsd:enumeration value="Motorcycle"/>
+            <xsd:enumeration value="Accessory"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>
