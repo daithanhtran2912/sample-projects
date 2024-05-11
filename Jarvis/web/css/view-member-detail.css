@@ -1,0 +1,16 @@
+body{width: 1220px; border: 1px solid black; margin: 0px ; height: 100%; font-family: "Pathway Gothic One"; box-sizing: border-box; }
+.member-detail-container{width: 90%; height: 600px; border-right: 2px solid #0b3a42; box-sizing: border-box; margin-left: 50px; margin-top: -15px; position: absolute; }
+.member-image img{width: 300px; height: 430px; border: 2px solid black; float: left; margin-left: 70px; position: absolute; margin-top: 10px;}
+.member-detail{width: 500px; height: 100%; box-sizing: border-box; float: left; box-sizing: border-box; font-size: 30px; color: #264e86; position: absolute; margin-left: 450px; }
+.member-detail input[name=txtUsername]{width: 300px; height: 25px; margin-bottom: 10px; font-size: 15px; margin-left: 40px; }
+.member-detail input[name=txtPassword]{width: 300px; height: 25px; margin-bottom: 10px; font-size: 15px; margin-left: 40px; margin-right: 150px; }
+.member-detail input[name=txtFirstname]{width: 400px; height: 25px; margin-bottom: 10px; font-size: 15px; margin-left: 40px; }
+.member-detail input[name=txtLastname]{width: 400px; height: 25px; margin-bottom: 10px; font-size: 15px; margin-left: 40px; }
+.member-detail input[name=txtEmail]{width: 400px; height: 25px; margin-bottom: 10px; font-size: 15px; margin-left: 40px; }
+.member-detail input[type=radio]{margin-left: 70px; margin-right: 10px; } 
+.member-detail input[name=txtPassword]{width: 300px; height: 25px; margin-bottom: 10px; font-size: 15px; margin-left: 40px; margin-right: 150px; }
+.member-detail input[type=submit]{width: 300px; height: 35px; font-size: 15px; border: 1px solid #097F6C; background-color: #4CEBFF; margin-left: 50px; margin-top: 20px; }
+h2{font-size: 40px; margin-left: 10px; color: #08c299; }
+#img-url{position: absolute; left: 50px; bottom: 110px; width: 350px; height: 25px; border: 1px solid #6c5b7b; }
+#update-member label.error{color: red; font-style: italic; font-size: 20px; margin-left: 50px; }
+.radioBtn{color: black; font-size: 25px; }
