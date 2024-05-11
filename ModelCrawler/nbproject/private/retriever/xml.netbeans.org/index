@@ -1,0 +1,465 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>NetBeans XML Support in NetBeans IDE</title>
+    <link href="https://asset-2.netbeans.org/stylesheets/base_packaged.css?20160708.bf2ac18" media="screen" rel="stylesheet" type="text/css" />    
+    <!--[if IE 7]>
+    <link href="https://asset-1.netbeans.org/stylesheets/ie7_packaged.css?20160708.bf2ac18" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!--[if IE 6]>
+    <link href="https://asset-2.netbeans.org/stylesheets/iex60.css?20160708.bf2ac18" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <link href="https://asset-1.netbeans.org/stylesheets/print_packaged.css?20160708.bf2ac18" media="print" rel="stylesheet" type="text/css" />
+    <script src="https://asset-0.netbeans.org/javascripts/head_packaged.js?20160708.bf2ac18" type="text/javascript"></script>
+    <script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">
+        stLight.options({
+            publisher:'bcd30425-1749-43d6-a311-18a82f89771a'
+        });
+    </script>
+    <script type="text/javascript">
+//<![CDATA[
+var page={"token":"XxYk7nxuO2lDUObN0oL83ERqF+8TLYzp2MHdrlRmuaA="};
+//]]>
+</script>
+    <script type="text/javascript" charset="utf-8">
+      function debug(m){}
+    </script>
+    
+	<link rel="stylesheet" type="text/css" href="http://www.netbeans.org/netbeans.css" />
+	<link rel="shortcut icon" href="http://www.netbeans.org/favicon.ico" type="image/x-icon" />
+	
+	
+	<meta name="description" content="Home page for the XML project that adds support for working with XML, XML Schema, DTD and CSS documents in NetBeans" />
+	<meta name="keywords" content="NetBeans, IDE, free, open source, developer, XML, NetBeans, XML Schema, NetBeans XML Schema, XML Schema Module, NetBeans XML Schema Module, XML Editor, XML Schema Tools, CSS, DTD, XSL, XSLT, XML Schema, XML tools API" />
+    
+    <!-- INCLUDED CODE START -->
+    <meta name="description" content=""/>
+    <meta name="keywords" content="java IDE, java editor, java Platform, free, open source, java development, j2ee support, development enviroment, web development, NetBeans, IDE, java" />
+    <link rel="SHORTCUT ICON" href="https://netbeans.org/images_www/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://netbeans.org/netbeans3.css" media="screen">
+    <script src="https://netbeans.org/images_www/js/html5.js" type="text/javascript"></script>
+    <!--[if lt IE 10]>
+    <script type="text/javascript" src="https//netbeans.org/images_www/pie/PIE.js"></script>
+    <![endif]-->
+    <script src="https://netbeans.org/images_www/js/companion-projects.js" type="text/javascript"></script>
+    <script language="JavaScript" type="text/javascript">
+      var username="";
+    </script>
+    <!-- INCLUDED CODE END -->
+    <link href="https://netbeans.org/theme/stylesheets/nblaf.css" media="screen" rel="stylesheet" type="text/css" />
+    <!-- Anti clickjacking -->
+    <style id="antiClickjack">body{display:none !important;}</style>
+    <script type="text/javascript">
+      if (self === top) {
+        var antiClickjack = document.getElementById("antiClickjack");
+        antiClickjack.parentNode.removeChild(antiClickjack);
+      } else {
+        top.location = self.location;
+      }
+    </script>
+  </head>
+  <body id="bg" class="composite blue-bg">
+    <!-- INCLUDED CODE START -->
+    <div id="wrapper-kenai">
+      <div id="hdr">               
+        <div id="navtabs">
+          <a href="https://netbeans.org"><img src="https://netbeans.org/images_www/v7/design/logo_netbeans_red.png" id="nblogo" width="130" height="32"/></a>
+          <ul>
+            <li class="hover first"><a href="https://netbeans.org/features/index.html" title="NetBeans&nbsp;IDE">NetBeans IDE</a></li>
+            <li class="hover "><a href="https://netbeans.org/features/platform/index.html" title="NetBeans&nbsp;Platform">NetBeans Platform</a></li>
+            <li class="hover "><a href="http://plugins.netbeans.org/PluginPortal/" title="Plugins">Plugins</a></li>
+            <li class="hover "><a href="https://netbeans.org/kb/index.html" title="Docs&nbsp;&amp;&nbsp;Support">Docs &amp; Support</a></li>
+            <li class="current "><a href="https://netbeans.org/community/index.html" title="Community">Community</a></li>
+            <li class="hover "><a href="https://netbeans.org/community/partners/index.html" title="Partners">Partners</a></li>
+          </ul>
+          <div id="search-div">                        
+            <form action="https://netbeans.org/search_result.html" id="cse-search-box">
+              <input type="hidden" name="cx" value="006102455337629464213:mt38ytkbuak" >
+              <input type="hidden" name="cof" value="FORID:11" >
+              <input type="text" id="search-input" value="Search" name="q"/>
+              <input type="image" src="https://netbeans.org/images_www/v7/design/icon_search.png" id="magnifier" alt="search"/>
+            </form>
+            <script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=cse-search-box&lang=en"></script>
+            <!-- Google CSE Search Box Ends -->
+          </div>
+        </div>
+      </div>
+      <div id="navig-breadcrumbs"><a href="https://netbeans.org/">netbeans.org</a><span>></span>  <a href="https://netbeans.org/projects">projects</a> >
+  <a href="https://netbeans.org/projects/xml">xml</a> >
+  <a href="https://netbeans.org/projects/xml/content" class="current">Website</a>
+</div>
+      <!-- start content area -->
+      <div id="middle">
+        <table class="colapse full-width f-page-table-2col"> <!-- main content table -->
+          <tr>
+            <td class="valign-top">
+              <div class="f-page-auto-cell">
+                <!-- START your body content here -->
+                  <div  class="content">
+                    <!--BEGIN CONTENT AREA-->
+                    
+                    
+
+
+
+
+<div class="contentPadding website">
+            
+	<h1>XML Support in NetBeans IDE</h1>
+	<p>Netbeans 6.0 comes bundled with a rich set of tools to work with various XML documents such as
+           XML Schema, WSDL, BPEL, XSLT, CSS, DTD and XML instance documents. The tools provide various ways of editing, visualizing
+           these documents. In addition it also provides refactoring support, search, queries and find usage, seamless navigation
+           between views, design pattern and schema aware code completion support to name a few.</p>
+
+        <p>Here are some highlights with pictures:</p>
+
+	<table cellpadding="5" cellspacing="5">
+		<tr valign="top">
+			<td align="center"><a href="images/screenshots/columnView.png"><img src="images/screenshots/columnView_th.png" alt="Thumb for columnView.png" border="1" /></a></td>
+			<td align="center"><a href="images/screenshots/designView.png"><img src="images/screenshots/designView_th.png" alt="Thumb for designView.png" border="1" /></a></td>
+		</tr>
+		<tr valign="top">
+			<td align="center">Allows easy creation and navigation of complex schema hierarchies</td>
+			<td align="center">Rapidly designs <tt>complexType</tt> and <tt>element</tt> definitions, even across multi-file schemas</td>
+		</tr>
+		<tr valign="top">
+			<td align="center"><a href="images/screenshots/findUsage.png"><img src="images/screenshots/findUsage_th.png" alt="Thumb for findUsage.png" border="1" /></a></td>
+			<td align="center"><a href="images/screenshots/designPattern.png"><img src="images/screenshots/designPattern_th.png" alt="Thumb for designPattern.png" border="1" /></a></td>
+		</tr>
+		<tr valign="top">
+			<td align="center">Find uses, rename, and safely delete across XML Schema, WSDL, and BPEL documents</td>
+			<td align="center">Apply design patterns to existing schemas</td>
+		</tr>
+		<tr valign="top">
+			<td align="center"><a href="images/screenshots/wsdlDesigner.png"><img src="images/screenshots/wsdlDesigner_th.png" alt="Thumb for wsdlDesigner.png" border="1" /></a></td>
+			<td align="center"><a href="images/screenshots/codeCompletion.png"><img src="images/screenshots/codeCompletion_th.png" alt="Thumb for codeCompletion.png" border="1" /></a></td>
+		</tr>
+		<tr valign="top">
+			<td align="center">Allows easy creation and navigation of WSDL documents</td>
+			<td align="center">Provide dynamic schema driven code completion</td>
+		</tr>
+	</table>
+
+        <h2>Downloads & Current Status</h2>
+
+        <ul>
+            <li>Want to stay current with our development? Check our <a href="http://wiki.netbeans.org/wiki/view/XmlTools">wiki page</a>
+            ant get the latest daily build here: <a href="http://bits.netbeans.org/netbeans/trunk/nightly/latest/">Daily Build Downloads</a></li>
+            <li>Want to stay with the latest stable version? Get it at <a href="http://netbeans.org/downloads/index.html">NetBeans IDE downloads main page</a></li>
+        </ul>
+
+
+        <h2>Learn More about XML tools</h2>
+<!--		<p>For a quick overview of XML schema tools, watch our <a href="http://developers.sun.com/prodtech/javatools/jsenterprise/nb_enterprise_pack/reference/presentations/xmltools.html" title="XML Schema Tools overview video">overview video</a>. To start learning about the tools, see <a href="http://www.netbeans.org/kb/55/xmltools-start.html" title="Getting Started with XML Schema Tools">Getting Started with XML Schema Tools</a>.</p>
+
+<h5>Demo</h5>
+<br>
+<div class="threelinesarticle"><a href="http://developers.sun.com/prodtech/javatools/jsenterprise/nb_enterprise_pack/reference/presentations/xmltools.html" title="Video: XML Schema Tools Demo">Video: XML Schema Tools Demo</a></div>
+<div class="articleperex">Take a video tour of the XML tools in NetBeans. You can use the <a href="http://www.netbeans.org/kb/55/xmltools-demoworkbook.html" title="Workbook: NetBeans - XML Schema Tools Demo">accompanying workbook</a> to reproduce the actions demonstrated in the video.</div>
+<div class="articleborder"></div>
+-->
+<h5>Technical Articles</h5>
+<br />
+<div class="threelinesarticle"><a href="http://xml.netbeans.org/XAM_XDM_tutorial.pdf" title="Overview of the XAM and XDM models in the NetBeans IDE">Overview of the XAM and XDM models in the NetBeans IDE <b>(new)</b></a> by <a href="mailto:supernikita@netbeans.org">Nikita Krjukov</a>, SPB DC</div>
+<div class="articleperex">This document explains the use and capabilities of the XAM and XDM models in the NetBeans IDE. It covers the most important aspects of model implementation and provides source code analysis. It is a valuable source of information if you are going to implement your own XAM-based model or fix issues in the existing models.</div>
+<div class="articleborder"></div>
+<br />
+<div class="threelinesarticle"><a href="http://wiki.netbeans.org/wiki/view/SchemaAwareCodeCompletion" title="Schema aware code completion">Schema aware code completion <b>(new)</b></a></div>
+<div class="articleperex">This article explains schema aware code completion in XML documents.</div>
+<div class="articleborder"></div>
+<!--
+<div class="threelinesarticle"><a href="http://developers.sun.com/prodtech/javatools/jsenterprise/nb_enterprise_pack/reference/techart/abe.html" title="Writing XML Schemas by Example">Writing XML Schemas by Example</a></div>
+<div class="articleperex">Through a video, this article shows you, step by step, how to write XML schemas by visualizing them as instance documents in the Design view. This article also describes the Design view's advantages over other similar tools.</div>
+<div class="articleborder"></div>
+
+<div class="threelinesarticle"><a href="http://developers.sun.com/prodtech/javatools/jsenterprise/nb_enterprise_pack/reference/techart/multifile.html" title="Working with Multifile Schemas">Working with Multifile Schemas</a></div>
+<div class="articleperex">With NetBeans 6.0, building large schemas that span across multiple files and namespaces is a cakewalk, thanks to the IDE's capabilities that are specifically targeted for that purpose. This article shows you how to reference, retrieve, and catalog external schemas; resolve references; look up mappings; and build and validate multifile schemas.</div>
+<div class="articleborder"></div>
+
+<div class="threelinesarticle"><a href="http://developers.sun.com/prodtech/javatools/jsenterprise/nb_enterprise_pack/reference/techart/anal_schemas.html" title="Analyzing XML Schemas">Analyzing XML Schemas</a></div>
+<div class="articleperex">An IDE like the NetBeans 6.0 can analyze XML schemas and delineate their structure, contents, and the relationships among the components. Read about the query capabilities in the Early Access release and the enhancements in the works.</div>
+<div class="articleborder"></div>
+
+<div class="threelinesarticle"><a href="http://developers.sun.com/prodtech/javatools/jsenterprise/nb_enterprise_pack/reference/techart/design_patterns.html" title="Introducing Design Patterns in XML Schemas">Introducing Design Patterns in XML Schemas</a></div>
+<div class="articleperex">Choosing the appropriate pattern is a key step in the design phase of the development cycle for XML schemas. In this article, you learn the definitions for the four most common pattern types and their advantages and disadvantages. It also explains how NetBeans 6.0 displays, detects, and maintains those patterns, greatly simplifying a multitude of cumbersome and error-prone tasks. </div>
+<div class="articleborder"></div>
+
+<div class="threelinesarticle"><a href="http://developers.sun.com/prodtech/javatools/jsenterprise/nb_enterprise_pack/reference/techart/namespaces2.html" title="Namespaces in XML Schemas, Part 2 of Two-Part Series: import and include">Namespaces in XML Schemas, Part 2 of Two-Part Series: <tt>import</tt> and <tt>include</tt></a></div>
+<div class="articleperex">Learn how to create multifile XML schemas with import and include statements. Read Part 1 for the basics of namespace programming.</div>
+<div class="articleborder"></div>
+
+<div class="threelinesarticle"><a href="http://developers.sun.com/prodtech/javatools/jsenterprise/nb_enterprise_pack/reference/techart/namespaces.html" title="Namespaces in XML Schemas, Part 1: An Introduction">Namespaces in XML Schemas, Part 1: An Introduction</a></div>
+<div class="articleperex">Learn about XML namespaces and their interactions with XML schemas. This article introduces the basic principles with examples.</div>
+<div class="articleborder"></div>
+
+-->
+<!--
+<h5>Tutorials</h5>
+<br>
+<div class="threelinesarticle"><a href="http://www.netbeans.org/kb/55/xmltools-start.html" title="Getting Started with XML Schema Tools">Getting Started with XML Schema Tools</a></div>
+<div class="articleperex">Take a tour of the functionality in the XML schema tools modules in this set of tutorials.</div>
+<div class="articleborder"></div>
+
+<div class="threelinesarticle"><a href="http://www.netbeans.org/kb/55/ep-refactoring.html" title="Refactoring in a BPEL Module Project Using NetBeans 6.0">Refactoring in a BPEL Module Project Using NetBeans 6.0</a></div>
+<div class="articleperex">Review examples of using refactoring functionality in a BPEL Module project.</div>
+<div class="articleborder"></div>
+
+<div class="threelinesarticle"><a href="http://www.netbeans.org/kb/55/xmltools-demoworkbook.html" title="Workbook: NetBeans - XML Schema Tools Demo">Workbook: NetBeans - XML Schema Tools Demo</a></div>
+<div class="articleperex">Use this document to reproduce the actions demonstrated in the <a href="http://developers.sun.com/prodtech/javatools/jsenterprise/nb_enterprise_pack/reference/presentations/xmltools.html" title="NetBeans - XML Schema Tools Demo">NetBeans - XML Schema Tools Demo</a>.</div>
+<div class="articleborder"></div>
+-->
+<h5>Specifications</h5>
+
+<p>Go to the <a href="http://xml.netbeans.org/specs/index.html" title="Specifications">Specifications page</a> to access the functional and design specification documentation.</p>
+
+<h5>Other Resources</h5>
+<br />
+<div class="threelinesarticle"><a href="http://www.w3.org/TR/xmlschema-0/" title="XML Schema Part 0: Primer">XML Schema Part 0: Primer</a></div>
+<div class="articleperex">XML Schema Part 0: Primer is a non-normative document intended to provide an easily readable description of the XML Schema facilities, and is oriented towards quickly understanding how to create schemas using the XML Schema language.</div>
+<div class="articleborder"></div>
+<div class="threelinesarticle"><a href="http://www.w3.org/TR/REC-xml-names/" title="Namespaces in XML">Namespaces in XML</a></div>
+<div class="articleperex">XML namespaces provide a simple method for qualifying element and attribute names used in Extensible Markup Language documents by associating them with namespaces identified by URI references.</div>
+<div class="articleborder"></div>
+
+<h2>Other Modules in this Project</h2>
+<br />
+<div class="threelinesarticle"><a href="api/index.html">API</a></div>
+<div class="articleperex">The module provides simple XML tools API for various XML related modules.</div>
+<div class="articleborder"></div>
+<div class="threelinesarticle"><a href="catalog/index.html">Entity Catalog</a></div>
+<div class="articleperex">The module allows to persistently mount entity catalogs. This implementation support NetBeans native catalog and standard XML catalog. Module also offer SPI to support another catalog implementation plug in.</div>
+<div class="articleborder"></div>
+<div class="threelinesarticle"><a href="core/index.html">Core</a></div>
+<div class="articleperex">The module is a base for all XML related modules. It recognizes XML and DTD documents, which can be opened in text editor. It supports parsing of those documents into TAX (Tree API for XML) representation. It supports synchronization among document representations. It also holds all settings shared among all XML related modules.</div>
+<div class="articleborder"></div>
+<div class="threelinesarticle"><a href="css/index.html">CSS</a></div>
+<div class="articleperex">The module provides very basic support for CSS editing. CSS documents can be opened in text editor with syntax coloring. There is a syntax check action.</div>
+<div class="articleborder"></div>
+<div class="threelinesarticle"><a href="text-edit/index.html">Text Editor</a></div>
+<div class="articleperex">The module provides text editing capabilities. It adds syntax coloring, abbreviation support and simple indentation engine into text editing of XML and DTD documents.</div>
+<div class="articleborder"></div>
+<div class="threelinesarticle"><a href="tools/index.html">Tools</a></div>
+<div class="articleperex">The module contains various actions, generators and tools. Especially action to generate simple DTD from XML document, or wizard which generate SAX handler implementation according to selected DTD document.</div>
+<div class="articleborder"></div>
+<div class="threelinesarticle"><a href="xam-usage.html">XAM/Retriever/XDM</a></div>
+<div class="articleperex">The set of modules provide infrastructure for building domain specific model with efficient undoable mutations, lazy loading and external reference capabilities.</div>
+<div class="articleborder"></div>
+<div class="threelinesarticle"><a href="xsl/index.html">XSL</a></div>
+<div class="articleperex">The module provides simple XSL support including XSL transformation action.</div>
+<div class="articleborder"></div>
+
+
+        <h2>Want to Participate?</h2>
+
+        <p>The simplest way how to participate and to improve current status
+            of the XML support in the NetBeans IDE is to share your
+            ideas for improvements or complaints about the functionality and/or
+            quality with us on our <a href="mailto:xml@netbeans.org">mailing list</a>
+            or in our <a href="http://netbeans.org/bugzilla/enter_bug.cgi?component=xml">bug tracking system</a>.
+        </p>
+	<!--
+        <p>For those interested, the <a href="http://xml.netbeans.org/source/browse/xml">source
+            code can be found here</a>.
+        </p>
+	-->
+        <p>Currently participating in this project are:
+        </p>
+
+        <blockquote>
+            <p>
+                Girish Patil (<tt>girish dot patil at sun dot com</tt>)<br />
+                Nam Nguyen (<tt>nam dot nguyen at sun dot com</tt>)<br />
+		Ritesh Adval (<tt>ritesh dot adval at sun dot com</tt>)<br />
+		Samaresh Panda (<tt>samaresh dot panda at sun dot com</tt>)<br />
+		Shivanand Kini (<tt>shivanand dot kini at sun dot com</tt>)<br />
+		Sonali Kochar (<tt>sonali dot kochar at sun dot com</tt>)<br />
+                Srividhya Narayanan, engineering manager (<tt>srividhya dot narayanan at sun dot com</tt>)<br />
+            </p>
+        </blockquote>
+
+        <br />
+	<p>To send feedback, get support, and receive updates and information about XML development support in NetBeans, go to the <a href="http://netbeans.org/projects/xml/lists" title="XML Module mailing lists">XML Module Mailing Lists page</a> and subscribe to the appropriate lists.</p>
+        
+
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+	</script>
+	<script type="text/javascript">
+	_uacct = "UA-1166339-7";
+	urchinTracker();
+	</script>
+
+      </div>
+
+                    <!--END CONTENT AREA-->
+                  </div>
+                <!-- END your body content here -->
+              </div>
+            </td>
+            <td class="valign-top rcol b-left"  id="rc">
+              <div id="loginbox" class="b-bottom bg-bege align-center">
+                    <div class="links">
+      <a href="https://netbeans.org/people/login?original_uri=https%3A%2F%2Fxml.netbeans.org%2F" rel="nofollow">Login</a>
+      <span class="separator">|</span> <a href="https://netbeans.org/people/new">Join Now</a>
+        <span class="separator">|</span>
+    <a href="https://netbeans.org/projects/help/pages/WebSite#WithNavigation" target="_blank">Help</a>
+  </div>
+  <br>
+  <form><input type="text" id="live-search" value="Jump to..." autocomplete="off" /></form>
+  <br>
+
+              </div>
+              <div class="f-page-cell bg-sky b-bottom" >
+                <div class="vAccordion">
+                    <h1>Navigation</h1>
+                    <ul>
+                      <li><a href="https://netbeans.org/">Home</a></li>
+                      <li><a href="https://netbeans.org/mypage">My Page</a></li>
+                      <li><a href="https://netbeans.org/projects">Projects</a></li>
+                      <li><a href="https://netbeans.org/people">People</a></li>
+                    </ul>
+                 </div>
+              </div>
+              <div class="f-page-cell b-bottom" >
+                  <div class="vAccordion">
+  <h1>Project Features</h1>    
+      <ul>
+                  
+          <li><strong>
+	    
+              Issue Tracking            
+          </strong></li>
+          <li class="vAccordion-detail"><a href="http://netbeans.org/bugzilla/buglist.cgi?product=xml&amp;order=Importance&amp;limit=25" target="_blank">Bugzilla</a></li>
+                  
+          <li><strong>
+	    
+              <a href="https://netbeans.org/projects/xml/lists">Mailing Lists</a>
+            
+          </strong></li>
+          
+                  
+          <li><strong>
+	    
+              Downloads            
+          </strong></li>
+          <li class="vAccordion-detail"><a href="https://netbeans.org/projects/xml/downloads">Downloads</a></li>
+                  
+          <li><strong>
+	    
+              Website            
+          </strong></li>
+          <li class="vAccordion-detail"><a href="http://xml.netbeans.org/">Website</a></li>
+              </ul>
+      
+<h1>About this Project</h1>
+  <div style="text-align:left; margin:5px;">
+    <a href="https://netbeans.org/projects/xml">XML</a>
+    
+    was started in
+    November 2009, is owned by
+    <a href="https://netbeans.org/people/8-dstrupl"><span class="person -kenai-dstrupl">dstrupl</span></a>,
+    and has <a href="https://netbeans.org/projects/xml/members">58 members</a>.
+  </div>
+  <ul>
+    
+      
+        <li><a href="https://netbeans.org/projects/xml/watch"><span class="bullet">&raquo;</span> Join This Project</a></li>
+      
+    
+  </ul>
+  
+
+</div>
+
+              </div>
+              <div class="f-page-cell b-bottom bg-bege" >
+                <div class="vAccordion">
+                    <h1>NetBeans.org</h1>
+                    <ul>
+                      <li><a href="https://netbeans.org/people/new">Join</a></li>
+                      <li><a href="https://netbeans.org/community/news/">News</a></li>
+                      <li><a href="https://netbeans.org/community/releases/">Releases &amp; Planning</a></li>
+                      <li><a href="https://netbeans.org/community/lists/">Mailing Lists</a></li>
+                      <li><a href="https://netbeans.org/community/issues.html">Bugzilla</a></li>
+                      <li><a href="https://netbeans.org/community/contribute/">Contribute</a></li>
+                      <li><a href="https://netbeans.org/community/teams/">Teams</a></li>
+                      <li><a href="https://netbeans.org/community/guidelines/">Guidelines</a></li>
+                    </ul>
+                  </div>
+              </div>
+            </td>
+          </tr><!-- end main content -->
+        </table><!-- end main content table -->
+      </div>
+      <!-- end contentarea -->
+      <div id="ftr">
+        <ul class="float-right" id="social-media">
+          <li><a href="http://www.facebook.com/NetBeans"><img src="https://netbeans.org/images_www/v7/design/icin_facebook.png" width="30" height="30" alt="facebook"></a></li>
+          <li><a href="http://www.youtube.com/user/netbeansvideos"><img src="https://netbeans.org/images_www/v7/design/icin_youtube.png" width="30" height="30" alt="youtube"></a></li>
+          <li><a href="https://plus.google.com/105597468329838196909/"><img src="https://netbeans.org/images_www/v7/design/icin_google.png" width="30" height="30" alt="google+"></a></li>
+          <li><a href="https://twitter.com/netbeans"><img src="https://netbeans.org/images_www/v7/design/icin_twitter.png" width="30" height="30" alt="twitter"></a></li>
+        </ul>
+        <ul>
+          <li><a href="https://netbeans.org/sitemaps/www_map.html">SiteMap</a></li>
+          <li><a href="https://netbeans.org/about/index.html">About Us</a></li>
+          <li><a href="https://netbeans.org/about/contact.html">Contact</a></li>
+          <li><a href="https://netbeans.org/about/legal/index.html">Legal &amp; Licences</a></li>
+        </ul> 
+      </div>
+      <div id="tof" class="align-right">
+        By use of this website, you agree to the <a href="/about/legal/terms-of-use.html">NetBeans Policies and Terms of Use</a> (<a href="https://netbeans.org/projects/help/pages/ReleaseNotes">revision 20160708.bf2ac18</a>).
+        &copy; 2014, Oracle Corporation and/or its affiliates. Sponsored by <img src="https://netbeans.org/images_www/v7/design/logo_oracle.png" width="56" height="8" alt="Oracle logo"/>
+      </div>
+    </div>
+    <div id="companion-projects">
+      <script type="text/javascript">
+        document.write(renderCompanionProjectIcons());
+      </script>
+    </div>
+
+    <!-- Begin SiteCatalyst code -->
+    <script language="JavaScript" src="https://netbeans.org/images_www/js/s_code_remote.js" type="text/javascript"></script>
+    <!-- End SiteCatalyst code -->
+    <!-- INCLUDED CODE END -->
+        <!-- popups that are anchored to specific elements -->
+    <div class="popupMenuShadow" id="contextMenuShadow"></div>
+    <div class="popupMenuContainer" id="contextMenu">
+      <div class="popupMenu inline">	
+        <div class="upArrow"></div>
+        <div class="header"></div>
+        <div class="contextMenuBody" id="contextMenuBody">&nbsp;</div>
+      </div>
+    </div> 
+    
+    <!-- large content loaded via ajax. Faded but not modal. -->
+    <div class="jqmWindow" id="jqm_large_overlay">
+      <div class="jqmHeader">
+        <div class="jqmTitle">&nbsp;</div>
+        <img alt="Close" class="jqmClose" src="https://asset-3.netbeans.org/images/close.gif?20160708.bf2ac18" />
+      </div>
+      <div class="jqmTarget">
+        <img alt="loading" src="https://asset-1.netbeans.org/images/activity.gif?20160708.bf2ac18" />
+      </div>
+      <div class="jqmFooter">
+      	<div class="jqmClose functionButtonContainer"><button class="functionButton" title="Done"> Done </button></div>
+      </div>
+    </div>
+    
+    <!-- confirmation dialogs with buttons. Faded and modal. -->
+    <div class="jqmWindow" id="jqm_dialog">
+      <div class="jqmHeader">
+        <div class="jqmTitle">Please Confirm</div>
+        <img alt="Close" class="jqmClose" src="https://asset-3.netbeans.org/images/close.gif?20160708.bf2ac18" />
+      </div>
+      <div class="jqmTarget">&nbsp;</div>
+      <div class="jqmFooter">
+      	<div class="jqmClose functionButtonContainer"><button class="functionButton" id="jq_no_button" title="No" onclick="Modal.no()"> No </button></div>
+      	<div class="jqmClose functionButtonContainer"><button class="functionButton" id="jq_yes_button" title="Yes" onclick="Modal.yes();"> Yes </button></div>
+      </div>
+    </div>    
+
+  </body>
+  <script src="https://asset-1.netbeans.org/javascripts/body_packaged.js?20160708.bf2ac18" type="text/javascript"></script>
+  
+</html>

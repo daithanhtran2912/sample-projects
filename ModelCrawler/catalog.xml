@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/D:/FPT/CN8/PRX301/New%20Folder/ModelCrawler/web/WEB-INF/product.xsd" uri="src/conf/xml-resources/jaxb/product/product.xsd"/>
+</catalog>
