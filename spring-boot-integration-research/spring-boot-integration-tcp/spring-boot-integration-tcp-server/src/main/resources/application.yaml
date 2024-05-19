@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: spring-boot-integration-tcp-server
+
+server:
+  port: 8081
+
+tcp:
+  server:
+    port: 9898
