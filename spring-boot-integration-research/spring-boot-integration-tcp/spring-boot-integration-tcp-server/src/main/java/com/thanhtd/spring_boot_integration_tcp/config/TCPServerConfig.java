@@ -1,7 +1,8 @@
 package com.thanhtd.spring_boot_integration_tcp.config;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.thanhtd.spring_boot_integration_tcp.service.MessageService;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,11 +14,14 @@ import org.springframework.integration.ip.tcp.connection.TcpNioServerConnectionF
 import org.springframework.integration.ip.tcp.serializer.ByteArrayCrLfSerializer;
 import org.springframework.messaging.MessageHeaders;
 
+@Slf4j
 @Configuration
 @EnableIntegration
+@RequiredArgsConstructor
 public class TCPServerConfig {
 
-    private static final Logger log = LoggerFactory.getLogger(TCPServerConfig.class);
+    private final MessageService messageService;
+
     @Value("${tcp.server.port}")
     private int port;
 
@@ -43,8 +47,6 @@ public class TCPServerConfig {
     }
 
     private String handleIncomingMessage(byte[] payload, MessageHeaders headers) {
-        log.info("Received message: {}", new String(payload));
-        log.info("Received message headers: {}", headers);
-        return "Thread: " + Thread.currentThread().getName() + " Server response...";
+        return messageService.handleMessage(payload);
     }
 }

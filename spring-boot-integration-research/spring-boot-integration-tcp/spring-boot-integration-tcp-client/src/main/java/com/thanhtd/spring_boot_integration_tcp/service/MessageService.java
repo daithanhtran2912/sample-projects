@@ -1,30 +1,32 @@
 package com.thanhtd.spring_boot_integration_tcp.service;
 
+import com.thanhtd.spring_boot_integration_tcp.dto.MessageDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.integration.support.json.Jackson2JsonObjectMapper;
+import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.time.LocalDateTime;
 
 @Slf4j
-@Configuration
+@Service
 @RequiredArgsConstructor
 public class MessageService {
 
     private final TCPClientGateway tcpClientGateway;
-    private static int counter = 0;
 
-    @Scheduled(fixedDelay = 30000, initialDelay = 5000)
-    public void sendMessage() {
-        if (counter < 10) {
-            var response = tcpClientGateway.send("Test message: " + LocalDateTime.now());
-            log.info("### Server response: {}", response);
-            increase();
-        }
-    }
-
-    private void increase() {
-        MessageService.counter++;
+    public MessageDTO send(String message) throws IOException {
+        MessageDTO requestDto = MessageDTO.builder()
+                .message(message)
+                .sender("client")
+                .timestamp(LocalDateTime.now().toString())
+                .build();
+        Jackson2JsonObjectMapper mapper = new Jackson2JsonObjectMapper();
+        var requestJson = mapper.toJson(requestDto);
+        var requestByte = requestJson.getBytes();
+        var responseStr = tcpClientGateway.send(requestByte);
+        log.info("Received response from server: {}", responseStr);
+        return mapper.fromJson(responseStr, MessageDTO.class);
     }
 }

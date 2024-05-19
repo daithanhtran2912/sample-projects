@@ -13,9 +13,6 @@ import org.springframework.integration.ip.dsl.Tcp;
 import org.springframework.integration.ip.tcp.connection.AbstractClientConnectionFactory;
 import org.springframework.integration.ip.tcp.connection.TcpNioClientConnectionFactory;
 import org.springframework.integration.ip.tcp.serializer.ByteArrayCrLfSerializer;
-import org.springframework.messaging.Message;
-import org.springframework.messaging.MessageHandler;
-import org.springframework.messaging.MessagingException;
 
 @Slf4j
 @Configuration
@@ -35,37 +32,20 @@ public class TCPClientConfig {
     private int poolSize;
 
     @Bean
-    public DirectChannel tcpClientChannel() {
+    public DirectChannel outboundChannel() {
         return MessageChannels.direct().getObject();
     }
 
     @Bean
     public IntegrationFlow tcpClientToServerFlow() {
-        return IntegrationFlow.from("tcpClientChannel")
-                .handle(Tcp.outboundGateway(connectionFactory()).remoteTimeout(timeout))
+        return IntegrationFlow.from("outboundChannel")
+                .handle(Tcp.outboundGateway(clientConnectionFactory()).remoteTimeout(timeout))
                 .transform(Transformers.objectToString())
                 .get();
 
     }
 
-    @Bean
-    public DirectChannel tcpClientErrorChannel() {
-        return MessageChannels.direct().getObject();
-    }
-
-    @Bean
-    public IntegrationFlow tcpClientErrorChannelFlow() {
-        return IntegrationFlow.from("tcpClientErrorChannel")
-                .handle(new MessageHandler() {
-                    @Override
-                    public void handleMessage(Message<?> message) throws MessagingException {
-                        log.error("Error communicating with tcp server. Message sent: {}", message.getPayload());
-                    }
-                })
-                .get();
-    }
-
-    public AbstractClientConnectionFactory connectionFactory() {
+    public AbstractClientConnectionFactory clientConnectionFactory() {
         var connectionFactory = new TcpNioClientConnectionFactory(host, port);
         connectionFactory.setUsingDirectBuffers(true);
         connectionFactory.setSingleUse(false);
