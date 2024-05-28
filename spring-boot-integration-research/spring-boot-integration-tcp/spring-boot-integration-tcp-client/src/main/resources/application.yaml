@@ -1,6 +1,9 @@
 spring:
   application:
     name: spring-boot-integration-tcp-client
+  banner:
+    image:
+      location: classpath:banner.txt
 
 server:
   port: 8082
@@ -10,5 +13,6 @@ tcp:
     host: localhost
     port: 9898
   client:
+    port: 8989
     timeout: 10000
-    poolSize: 3
+    poolSize: 5
